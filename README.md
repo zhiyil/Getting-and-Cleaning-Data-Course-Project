@@ -18,10 +18,12 @@ library(reshape2)
 
 ## Read subject files, i.e. subject_test.txt to tst.sub, and subject_train.txt to trn.sub
 tst.sub <- fread("~/R_for_DScourses/getting and cleaning data/Project/UCI HAR Dataset/test/subject_test.txt")
+
 trn.sub <- fread("~/R_for_DScourses/getting and cleaning data/Project/UCI HAR Dataset/train/subject_train.txt")
 
 ## Read activity files, i.e. y_test.txt to tst.y, and y_train.txt to trn.y
 tst.y <- fread("~/R_for_DScourses/getting and cleaning data/Project/UCI HAR Dataset/test/y_test.txt")
+
 trn.y <- fread("~/R_for_DScourses/getting and cleaning data/Project/UCI HAR Dataset/train/y_train.txt")
 
 ## Read data files, i.e. X_test.txt to tst.x, and X_train.txt to trn.x
@@ -82,4 +84,4 @@ newx <- newx[, orderedCol, with = FALSE]
 setnames(newx, names(newx)[4:length(names(newx))], extractedFeatures$measurement)
 
 # 5. Generate a tidy data table called tidy that carries out the averages required by the project ##
-tidy <- newx[,lapply(.SD, mean), by = key(newx), .SDcols = 4:length(names(newx))]# Getting-and-Cleaning-Data-Course-Project
+tidy <- newx[,lapply(.SD, mean), by = key(newx), .SDcols = 4:length(names(newx))]
