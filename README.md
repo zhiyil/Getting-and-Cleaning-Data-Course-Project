@@ -4,9 +4,9 @@ Major tasks of this R script
 Dataset download
 ----------------
 
-The dataset was downloaed onto local folder of
+The dataset was downloaed onto a local folder of
 
-[link](%22~/R_for_DScourses/getting%20and%20cleaning%20data/Project/UCI%20HAR%20Dataset%22)
+"~/R\_for\_DScourses/getting and cleaning data/Project/UCI HAR Dataset"
 
 All data tables are read from this folder. The data in "/Inertial
 Signals" folder was not used for this project.
