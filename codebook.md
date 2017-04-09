@@ -110,13 +110,6 @@ load libraries
     library(data.table)
     library(reshape2)
 
-    ## 
-    ## Attaching package: 'reshape2'
-
-    ## The following objects are masked from 'package:data.table':
-    ## 
-    ##     dcast, melt
-
 Read subject files, i.e. subject\_test.txt to tst.sub, and subject\_train.txt to trn.sub
 ----------------------------------------------------------------------------------------
 
